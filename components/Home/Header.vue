@@ -8,7 +8,7 @@
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav>
+        <b-navbar-nav @mouseleave="leave">
           <template v-for="item in menuItems">
             <b-nav-item :key="item.key" href="#" @mouseenter="enter(item)">{{
               item.name
